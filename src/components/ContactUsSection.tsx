@@ -11,7 +11,7 @@ export default function ContactUsSection() {
         <div>
           <h2 className="text-4xl font-bold mb-6">Contactez-nous</h2>
           <p className="text-lg text-gray-700 mb-8">
-            Vous avez des questions ou souhaitez en savoir plus sur nos produits au cannabis légal ? N'hésitez pas à nous écrire ou à nous appeler.
+            Vous avez des questions ou souhaitez en savoir plus sur nos produits au cannabis légal ? N&apos;hésitez pas à nous écrire ou à nous appeler.
           </p>
 
           <ul className="space-y-4 text-lg">

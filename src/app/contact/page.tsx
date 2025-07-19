@@ -1,6 +1,18 @@
 "use client";
-import React, { useState } from 'react';
-import { Phone, Mail, MapPin, Clock, Send, MessageCircle, Building, Users, Truck, Microscope, ChevronRight, Award, Globe, Calendar } from 'lucide-react';
+import { useState } from 'react';
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Clock,
+  Send,
+  MessageCircle,
+  Building,
+  Truck,
+  Microscope,
+  ChevronRight,
+  Calendar,
+} from 'lucide-react';
 import NavigationBar from '@/components/header';
 
 const ContactPage = () => {
@@ -174,7 +186,7 @@ const ContactPage = () => {
             Nous Contacter
           </h1>
           <p className="text-xl md:text-2xl text-emerald-100 max-w-4xl mx-auto leading-relaxed">
-            Notre équipe d'experts est à votre disposition pour répondre à toutes vos questions sur le cannabis thérapeutique et nos solutions personnalisées.
+            Notre équipe d&apos;experts est à votre disposition pour répondre à toutes vos questions sur le cannabis thérapeutique et nos solutions personnalisées.
           </p>
         </div>
       </div>

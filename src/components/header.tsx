@@ -1,9 +1,9 @@
 "use client";
-import React, { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { useState } from 'react';
+import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from '@/components/ui/navigation-menu';
+import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from '@/components/ui/navigation-menu';
 
 const CannabisLogo = () => (
   <svg width="40" height="40" viewBox="0 0 200 200" className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12">

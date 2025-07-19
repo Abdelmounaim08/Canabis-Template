@@ -1,6 +1,19 @@
-import React from 'react';
-import { Leaf, Users, Award, Target, Heart, Shield, Lightbulb, Globe, CheckCircle, Star, Calendar, MapPin, Microscope, Truck } from 'lucide-react';
+import {
+  Leaf,
+  Users,
+  Award,
+  Heart,
+  Shield,
+  Lightbulb,
+  Globe,
+  CheckCircle,
+  Calendar,
+  MapPin,
+  Microscope,
+  Truck,
+} from 'lucide-react';
 import NavigationBar from '@/components/header';
+import Image from 'next/image';
 
 const AboutUsPage = () => {
   const values = [
@@ -133,7 +146,7 @@ const AboutUsPage = () => {
             CannaBio France
           </h1>
           <p className="text-xl md:text-2xl text-emerald-100 max-w-4xl mx-auto leading-relaxed">
-            Leader européen du cannabis biologique thérapeutique depuis 2008. Pionniers de l'innovation et de l'excellence dans la culture, recherche et distribution de cannabis médical.
+            Leader européen du cannabis biologique thérapeutique depuis 2008. Pionniers de l&apos;innovation et de l&apos;excellence dans la culture, recherche et distribution de cannabis médical.
           </p>
         </div>
       </div>
@@ -148,7 +161,7 @@ const AboutUsPage = () => {
                   Notre Entreprise
                 </h2>
                 <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                  <strong>CannaBio France</strong> est une entreprise spécialisée dans la culture, transformation et distribution de cannabis à usage thérapeutique. Fondée en 2008 à Lyon par une équipe de botanistes et pharmacologues, nous sommes aujourd'hui le plus grand producteur de cannabis biologique certifié en France.
+                  <strong>CannaBio France</strong> est une entreprise spécialisée dans la culture, transformation et distribution de cannabis à usage thérapeutique. Fondée en 2008 à Lyon par une équipe de botanistes et pharmacologues, nous sommes aujourd&apos;hui le plus grand producteur de cannabis biologique certifié en France.
                 </p>
                 <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                   Nos 75 hectares de cultures high-tech produisent annuellement plus de 25 tonnes de cannabis de qualité pharmaceutique, distribuées dans 15 pays européens. Nous employons 150 experts passionnés: cultivateurs, chercheurs, pharmaciens, ingénieurs agronomes.
@@ -156,7 +169,7 @@ const AboutUsPage = () => {
                 <div className="grid grid-cols-2 gap-6">
                   <div className="bg-emerald-50 p-4 rounded-lg">
                     <div className="text-2xl font-bold text-emerald-600">€45M</div>
-                    <div className="text-sm text-gray-600">Chiffre d'affaires 2023</div>
+                    <div className="text-sm text-gray-600">Chiffre d&apos;affaires 2023</div>
                   </div>
                   <div className="bg-blue-50 p-4 rounded-lg">
                     <div className="text-2xl font-bold text-blue-600">25T</div>
@@ -165,11 +178,20 @@ const AboutUsPage = () => {
                 </div>
               </div>
               <div>
-                <img 
+                {/* <img 
                   src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
                   alt="Installations CannaBio France"
                   className="rounded-2xl shadow-2xl"
-                />
+                /> */}
+                 <Image
+                  src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+
+                  width={800}
+                  height={400}
+                  className="rounded-2xl shadow-2xl"
+
+                  priority={true}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px" alt={''}                                              />
               </div>
             </div>
           </div>
@@ -228,7 +250,7 @@ const AboutUsPage = () => {
               Nos Engagements
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Quatre piliers fondamentaux qui guident notre approche et garantissent l'excellence de nos produits
+              Quatre piliers fondamentaux qui guident notre approche et garantissent l&apos;excellence de nos produits
             </p>
           </div>
 
@@ -285,7 +307,7 @@ const AboutUsPage = () => {
               Notre Palmarès
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              15 années d'innovations, de récompenses et de reconnaissance dans l'industrie du cannabis thérapeutique
+              15 années d&apos;innovations, de récompenses et de reconnaissance dans l&apos;industrie du cannabis thérapeutique
             </p>
           </div>
 
@@ -365,7 +387,7 @@ const AboutUsPage = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Leaf className="w-16 h-16 mx-auto text-emerald-400 mb-6" />
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            L'Excellence du Cannabis Thérapeutique Français
+            L&lsquo;Excellence du Cannabis Thérapeutique Français
           </h2>
           <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
             Découvrez notre gamme complète de produits CBD premium et nos solutions personnalisées pour professionnels de santé

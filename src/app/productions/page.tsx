@@ -1,6 +1,22 @@
-import React from 'react';
-import { Leaf, Thermometer, Droplets, Sun, Shield, Microscope, Factory, Truck, Timer, Settings, ChevronRight, Award, CheckCircle, Activity, Users, Target } from 'lucide-react';
+import {
+  Leaf,
+  Thermometer,
+  Droplets,
+  Sun,
+  Shield,
+  Microscope,
+  Factory,
+  Truck,
+  Timer,
+  Settings,
+  ChevronRight,
+  Award,
+  CheckCircle,
+  Activity,
+  Target,
+} from 'lucide-react';
 import NavigationBar from '@/components/header';
+import Image from 'next/image';
 
 const ProductionPage = () => {
   const productionStages = [
@@ -116,7 +132,7 @@ const ProductionPage = () => {
             Notre Production
           </h1>
           <p className="text-xl md:text-2xl text-emerald-100 max-w-4xl mx-auto leading-relaxed">
-            De la graine au produit fini, découvrez nos installations de pointe et nos processus de production du cannabis thérapeutique le plus pur d'Europe.
+            De la graine au produit fini, découvrez nos installations de pointe et nos processus de production du cannabis thérapeutique le plus pur d&apos;Europe.
           </p>
         </div>
       </div>
@@ -134,7 +150,7 @@ const ProductionPage = () => {
                   Nos installations de <strong>75 hectares</strong> combinent tradition agricole et technologies de pointe pour produire annuellement <strong>25 tonnes</strong> de cannabis CBD de qualité pharmaceutique. Chaque étape de production est minutieusement contrôlée et optimisée.
                 </p>
                 <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                  De la sélection génétique à l'emballage final, nous appliquons les protocoles les plus stricts de l'industrie pharmaceutique, garantissant une traçabilité complète et une qualité constante de nos produits.
+                  De la sélection génétique à l&apos;emballage final, nous appliquons les protocoles les plus stricts de l&apos;industrie pharmaceutique, garantissant une traçabilité complète et une qualité constante de nos produits.
                 </p>
                 <div className="grid grid-cols-2 gap-6">
                   <div className="bg-emerald-50 p-4 rounded-lg">
@@ -148,11 +164,20 @@ const ProductionPage = () => {
                 </div>
               </div>
               <div>
-                <img 
+                {/* <img 
                   src="https://images.unsplash.com/photo-1530587191325-3db32d826c18?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
                   alt="Serres de production CannaBio"
                   className="rounded-2xl shadow-2xl"
-                />
+                /> */}
+                 <Image
+                  src="https://images.unsplash.com/photo-1530587191325-3db32d826c18?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+                  alt="Serres de production CannaBio"
+                  className="rounded-2xl shadow-2xl"
+                  width={800}
+                  height={400}
+
+                  priority={true}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"                                               />
               </div>
             </div>
           </div>
@@ -167,7 +192,7 @@ const ProductionPage = () => {
               Processus de Production
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Six étapes clés pour une production de cannabis CBD d'excellence thérapeutique
+              Six étapes clés pour une production de cannabis CBD d&apos;excellence thérapeutique
             </p>
           </div>
 

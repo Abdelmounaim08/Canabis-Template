@@ -4,10 +4,23 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { 
-  Leaf, Calendar, User, Clock, Search, Filter, Tag, ArrowRight, 
-  Eye, ThumbsUp, MessageCircle, Share2, TrendingUp, Beaker, 
-  Heart, Award, Globe, ChevronLeft, ChevronRight 
+import {
+  Leaf,
+  Calendar,
+  User,
+  Clock,
+  Search,
+  Tag,
+  ArrowRight,
+  Eye,
+  ThumbsUp,
+  MessageCircle,
+  TrendingUp,
+  Beaker,
+  Heart,
+  Globe,
+  ChevronLeft,
+  ChevronRight,
 } from 'lucide-react';
 import NavigationBar from '@/components/header';
 
@@ -295,7 +308,7 @@ const regularArticles = [
             Blog CannaBio
           </h1>
           <p className="text-xl md:text-2xl text-emerald-100 max-w-4xl mx-auto leading-relaxed">
-            Actualités, recherches et innovations dans l'univers du cannabis thérapeutique biologique. 
+            Actualités, recherches et innovations dans l&apos;univers du cannabis thérapeutique biologique. 
             Découvrez les dernières avancées scientifiques et nos expertises.
           </p>
         </div>
@@ -364,7 +377,7 @@ const regularArticles = [
                     Articles à la Une
                   </h2>
                   <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                    Nos dernières découvertes et innovations qui font l'actualité du cannabis thérapeutique
+                    Nos dernières découvertes et innovations qui font l&apos;actualité du cannabis thérapeutique
                   </p>
                 </div>
 
@@ -464,7 +477,7 @@ const regularArticles = [
                                 href={`/blog/${article.slug}`}
                                 className="flex items-center space-x-2 text-emerald-600 hover:text-emerald-700 font-medium group-hover:translate-x-2 transition-transform duration-300"
                               >
-                                <span>Lire l'article</span>
+                                <span>Lire l&apos;article</span>
                                 <ArrowRight className="w-4 h-4" />
                               </Link>
                             </div>
@@ -494,7 +507,7 @@ const regularArticles = [
                 <div className="text-center py-20">
                   <Search className="w-16 h-16 mx-auto text-gray-300 mb-4" />
                   <h3 className="text-xl font-semibold text-gray-600 mb-2">Aucun article trouvé</h3>
-                  <p className="text-gray-500">Essayez avec d'autres mots-clés ou changez de catégorie.</p>
+                  <p className="text-gray-500">Essayez avec d&apos;autres mots-clés ou changez de catégorie.</p>
                 </div>
               ) : (
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -652,7 +665,7 @@ const regularArticles = [
                     type="submit"
                     className="px-6 py-3 bg-white text-emerald-600 font-semibold rounded-lg hover:bg-gray-50 transition-colors focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-emerald-600"
                   >
-                    S'abonner
+                    S&apos;abonner
                   </button>
                 </form>
                 
@@ -671,7 +684,7 @@ const regularArticles = [
                   Explorez nos sujets
                 </h2>
                 <p className="text-lg text-gray-600">
-                  Découvrez toutes nos thématiques d'expertise
+                  Découvrez toutes nos thématiques d&apos;expertise
                 </p>
               </div>
 
