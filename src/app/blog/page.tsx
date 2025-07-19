@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
@@ -24,8 +24,7 @@ import {
 } from 'lucide-react';
 import NavigationBar from '@/components/header';
 
-/*************  ✨ Windsurf Command 🌟  *************/
-const BlogPage = () => {
+const BlogContent = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
   
@@ -35,7 +34,6 @@ const BlogPage = () => {
   const [isLoading, setIsLoading] = useState(false);
   const articlesPerPage = 6;
 
-  // State to manage selected category, search query, and pagination
   // Mise à jour de l'URL quand les filtres changent
   useEffect(() => {
     const params = new URLSearchParams();
@@ -730,6 +728,21 @@ const regularArticles = [
     </div>
   );
 };
-/*******  ed273454-42d3-4856-8c32-1eddf81a1736  *******/
-
+function BlogLoading() {
+  return (
+    <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+      <div className="text-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-emerald-600 mx-auto mb-4"></div>
+        <p className="text-gray-600">Chargement du blog...</p>
+      </div>
+    </div>
+  );
+}
+  function BlogPage() {
+  return (
+    <Suspense fallback={<BlogLoading />}>
+      <BlogContent />
+    </Suspense>
+  );
+}
 export default BlogPage;
