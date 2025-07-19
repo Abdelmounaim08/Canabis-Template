@@ -24,6 +24,7 @@ import {
 } from 'lucide-react';
 import NavigationBar from '@/components/header';
 
+/*************  ✨ Windsurf Command 🌟  *************/
 const BlogPage = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -34,6 +35,7 @@ const BlogPage = () => {
   const [isLoading, setIsLoading] = useState(false);
   const articlesPerPage = 6;
 
+  // State to manage selected category, search query, and pagination
   // Mise à jour de l'URL quand les filtres changent
   useEffect(() => {
     const params = new URLSearchParams();
@@ -728,5 +730,6 @@ const regularArticles = [
     </div>
   );
 };
+/*******  ed273454-42d3-4856-8c32-1eddf81a1736  *******/
 
 export default BlogPage;
